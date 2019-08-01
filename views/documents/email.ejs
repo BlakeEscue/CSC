@@ -1,0 +1,30 @@
+<%include ../partials/header%>
+<% include ../partials/show_edit%>
+<div class="container">
+                <hr>
+                <% customer.documents.forEach(function(document){ %> 
+                        
+                <div> <%- document.text %></div>
+                
+        
+                
+                    
+                     <div class="row sticky">
+                             <div class="col-md-12">
+                                <a href="/customers/<%=customer._id%>/email/<%=document._id%>/edit" class="btn btn-sm btn-warning btn-block" role="button">EDIT DOCUMENT</a>     
+                             </div>
+                            
+                            
+                    </div>
+                    
+                    
+                    
+                    
+                     <% }) %>
+        
+                
+        
+        
+        </div>
+
+<%include ../partials/footer%>

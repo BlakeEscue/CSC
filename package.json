@@ -1,0 +1,33 @@
+{
+  "name": "cscproject",
+  "version": "1.0.0",
+  "description": "CSC Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Blake Escue",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "express-session": "^1.16.1",
+    "gridfs-stream": "^1.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.5.9",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.1",
+    "multer-gridfs-storage": "^3.2.3",
+    "nodemailer": "^6.1.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "save": "^2.4.0",
+    "summernote": "^0.8.12"
+  }
+}

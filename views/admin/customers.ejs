@@ -1,0 +1,35 @@
+<%include ../partials/header%>
+
+<div class="row text-center">
+        
+            
+        
+  <div class="col-md-12 school-options-dropdown text-center">
+      <p>Choose Customer To Add Document </p>
+    <div class="dropdown btn-group">
+       
+
+      <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"> Search Customers   
+        
+            <span class="caret"></span>
+            
+      </button>
+      
+ 
+      <ul class="dropdown-menu pre-scrollable">
+            
+                    
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+       <% customers.forEach(function(customer){ %>   
+        <li><a href="/admin/customer/<%= customer._id %>"><%= customer.name %></a></li>
+
+        <% }); %> 
+      </ul>
+
+    </div>
+    
+  </div>
+  <a href="#" onClick="history.go(-1)">Go Back</a>
+</div>
+
+  <%include ../partials/footer%>
