@@ -43,6 +43,10 @@ function edit_form_submit() {
   document.getElementById("edit_form").submit();
  }    
 
+ function delete_cust_button() {
+  document.getElementById("delete_cust_button").submit();
+ }
+
 
 // init summernote (richtext)
 $(document).ready(function() {
@@ -57,9 +61,9 @@ $('.summernote').summernote({
   ['color', ['color']],
   ['para', ['ul', 'ol', 'paragraph']],
   ['table', ['table']],
-  ['insert', ['link', 'picture', 'video']],
+  ['insert', ['link']],
   ['view', ['fullscreen', 'codeview', 'help']],
     ],
-    //airMode: true
+
   });
 });

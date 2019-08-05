@@ -16,8 +16,16 @@ const indexRoutes       = require("./routes/index");
 const authRoutes       = require("./routes/auth");
 const documentRoutes = require("./routes/documents")
 
-
-mongoose.connect( process.env.MONGO_DB_URL, { useNewUrlParser: true });
+var options = {
+     server: { 
+        // sets how many times to try reconnecting
+        reconnectTries: Number.MAX_VALUE,
+        // sets the delay between every retry (milliseconds)
+        reconnectInterval: 1000 
+        } 
+    
+  };
+mongoose.connect( process.env.MONGO_DB_URL, options, { useNewUrlParser: true });
 //mongodb://blake:Nodemon19@ds237267.mlab.com:37267/csc
 mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
