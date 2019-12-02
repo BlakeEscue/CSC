@@ -26,7 +26,7 @@ var options = {
     
   };
 mongoose.connect( process.env.MONGO_DB_URL, options, { useNewUrlParser: true });
-//mongodb://blake:Nodemon19@ds237267.mlab.com:37267/csc
+
 mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
 
